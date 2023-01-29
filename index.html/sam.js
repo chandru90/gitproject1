@@ -17,5 +17,11 @@ odd[i].style.backgroundColor='blue'
 var third =document.querySelectorAll('.list-group')
 third[2].color='red'
 
-
-
+var newdiv = document.createElement('div')
+newdiv.className ='hi'
+newdiv.setAttribute('title','hello div')
+var newdivtext=document.createTextNode('hello world')
+newdiv.appendChild(newdivtext)
+var container=document.querySelector('header .container')
+var h1 =document.querySelector('header h1')
+container.insertBefore(newdiv,h1)
